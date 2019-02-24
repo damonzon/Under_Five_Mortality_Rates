@@ -1,0 +1,36 @@
+"Health Equity Assessment Toolkit (HEAT): Software for exploring and comparing health inequalities in countries. Built-in database edition. Version 3.0. Geneva, World Health Organization, 2018.",,,,,,,,,,,,,,,,,,,
+The disaggregated data used in this version were drawn from the WHO Health Equity Monitor database (2018 update) which may have been revised or updated since that time. The most recent version of that database is available on the WHO website  (http://apps.who.int/gho/data/node.main.HE-1540?lang=en).,,,,,,,,,,,,,,,,,,,
+setting,year,source,indicator_abbr,indicator_name,dimension,subgroup,estimate,se,ci_lb,ci_ub,population,flag,setting_average,iso3,favourable_indicator,indicator_scale,ordered_dimension,subgroup_order,reference_subgroup
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,01 kayes,259.1824341,12.63836575,235.1622162,284.7427063,3079,,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,02 koulikoro,230.9082642,11.30526447,209.4719543,253.8338928,3513,,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,03 sikasso,231.3672333,7.872673035,216.2799377,247.1750336,4235,,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,04 sagou,NA,NA,NA,NA,NA,Not available.,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,04 segou,274.3553467,13.55666733,248.5684509,301.7431946,3884,,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,05 mopti,325.1042786,13.38164043,299.4133606,351.892334,3411,,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,06 timbuktu,NA,NA,NA,NA,114,Not reported - Estimate is based on fewer than 250 unweighted person-years of exposure to the risk of death.,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,07 gao,NA,NA,NA,NA,196,Not reported - Estimate is based on fewer than 250 unweighted person-years of exposure to the risk of death.,251.6872559,MLI,0,1000,0,0,0
+Mali,1995,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,08 bamako,147.5418396,9.892967224,129.1647034,168.0290985,1983,,251.6872559,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,01 kayes,250.434082,11.74179459,228.1047363,274.1728516,3763,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,02 koulikoro,220.4060669,12.4202137,197.0008392,245.7410278,4377,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,03 sikasso,235.8903503,14.4216156,208.7705231,265.3516235,5546,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,04 segou,249.2384491,16.51131248,218.2601318,283.0217896,4844,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,05 mopti,291.0476685,8.913280487,273.8713074,308.8431091,3837,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,06 tombouctou,313.9223633,28.12931252,261.5093384,371.5550232,771,,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,07 gao,243.3506012,20.63843918,205.1606445,286.0907288,420,Attention - Estimate is based on 250-499 unweighted person-years of exposure to the risk of death.,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,08 kidal,NA,NA,NA,NA,36,Not reported - Estimate is based on fewer than 250 unweighted person-years of exposure to the risk of death.,238.5289459,MLI,0,1000,0,0,0
+Mali,2001,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,09 bamako,133.5323029,9.367731094,116.1955185,153.0079651,2608,,238.5289459,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,01 kayes,197.3461151,12.78323269,173.4560242,223.6363068,3881,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,02 koulikoro,221.5994873,9.337251663,203.8191528,240.4624329,5034,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,03 sikasso,236.4470062,10.43798542,216.5795135,257.5379028,5262,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,04 segou,261.6402893,13.03011608,236.8878174,288.0030212,4862,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,05 mopti,225.0516968,10.2049427,205.6596527,245.7066498,3745,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,06 tombouctou,227.31987,20.80097008,189.0954132,270.691803,1353,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,07 gao,136.0663605,18.4172554,103.7906113,176.4033203,1187,,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,08 kidal,NA,NA,NA,NA,90,Not reported - Estimate is based on fewer than 250 unweighted person-years of exposure to the risk of death.,214.1919708,MLI,0,1000,0,0,0
+Mali,2006,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,09 bamako,106.2087479,6.48232317,94.14298248,119.6167297,2662,,214.1919708,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,01 Kayes,95.72982788,11.50166321,75.415802,120.8007126,2660,,103.9646301,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,02 Koulikoro,94.43323517,9.610630035,77.18636322,115.0533371,4207,,103.9646301,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,03 Sikasso,120.6048813,10.23825836,101.9131622,142.1820679,4786,,103.9646301,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,04 Segou,115.4293823,9.229312897,98.51634979,134.8117676,3896,,103.9646301,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,05 Mopti,112.417717,11.98138428,90.96460724,138.1613617,2543,,103.9646301,MLI,0,1000,0,0,0
+Mali,2012,DHS,u5mr,Under-five mortality rate (deaths per 1000 live births),Subnational region,06 Bamako,59.01702499,6.266598701,47.85533905,72.58359528,1901,,103.9646301,MLI,0,1000,0,0,0
