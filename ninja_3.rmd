@@ -1,0 +1,106 @@
+---
+title: "Under-Five Mortality Rates"
+subtitle: "🇲🇱<br/>Damonzon Academy"
+author: "🦁<br/>Patrick Kelly\n\nemail: phototala@gmail.com\n\nPeaks Island, Maine"
+date: "2019/02/20 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+  nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r echo = FALSE}
+suppressMessages(library(data.table))
+suppressMessages(library(plotly))
+suppressMessages(library(dplyr))
+suppressMessages(library(png))
+suppressMessages(library(grid))
+data <- fread("u5mr.csv",skip = 2)
+data2 <- data[,c(2,7:12)]
+data2 <- data2[complete.cases(data2)]
+names(data2)[2]<-"city"
+names(data2)[3]<-"u5mr"
+data2 <- data2[-c(12:13,20:21), ]
+# Remove Gao and Timbuctu: missing data
+# Years between DHS surveys are not evenly spaced
+data2$year <- ifelse(data2$year == 1995,1,
+       ifelse(data2$year == 2001,2,
+       ifelse(data2$year == 2006,3,4)))
+data2$city <- gsub("[0-9 ]","",data2$city)
+cities_2012 <- filter(data2, year == 4)
+cities_2012$u5mr <- round(cities_2012$u5mr)
+```
+
+class:inverse, center, middle
+## Under-Five Mortality Rates
+
+```{r fig.width=10, fig.height=7,echo=FALSE,warning=FALSE}
+img <- readPNG("u5mr.png")
+grid.raster(img)
+```
+
+---
+class:inverse, center, middle
+##Barplot
+
+```{r, fig.height = 7, fig.width = 10,echo=FALSE}
+p <- ggplot(cities_2012, aes(x=reorder(city,u5mr), 
+     y=u5mr, City=city)) +
+     geom_bar(stat='identity', color="black", fill="blue") +
+    coord_flip() +
+    ggtitle("Under-Five Mortality Rates in Mali in 2012") +
+    xlab("Cities") +
+    ylab("U5MR") +
+    theme_bw()
+ ggplotly(p,tooltip = c("City","u5mr"))
+```
+
+---
+
+class:inverse, center, middle
+##Boxplot
+
+```{r, fig.height = 7, fig.width = 10,echo=FALSE}
+p <- ggplot(cities_2012, aes(x=1,y=u5mr,City=city)) + 
+  geom_boxplot() +
+  ggtitle("Under-Five Mortality Rates in Mali in 2012") +
+  xlab("Cities") +
+  ylab("U5MR") +
+  theme_bw() +
+  geom_jitter(shape=16, position=position_jitter(0.1),color="blue")+
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+ggplotly(p,tooltip = c("City","u5mr"))
+```
+
+---
+
+class:inverse, center, middle
+## Trends in Mali (2002-2015)
+
+```{r, fig.height = 7, fig.width = 10, echo = FALSE}
+data2$city[19] <- "kayes"
+data2$city[20] <- "koulikoro"
+data2$city[21] <- "sikasso"
+data2$city[22] <- "segou"
+data2$city[23] <- "mopti"
+data2$city[24] <- "bamako"
+
+p <- ggplot(data=data2, aes(x=year, y=u5mr, city)) +
+    geom_line(aes(color = city)) +
+    geom_point(aes(shape = city)) +
+    ggtitle("U5MR Trends in Cities: 1995 - 2012\nDHS Data") +
+    xlab("1 = 1995       2 = 2001       3 = 2006      4 = 2012") +
+    ylab("Under 5 Mortality Rate") +
+    theme_bw(base_size = 15)
+  p
+```
+
+
+  
